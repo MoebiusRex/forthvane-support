@@ -94,11 +94,11 @@
         <h2>Who can receive a mapping request</h2>
         <p>
           The exact active services are shown inside Rangecraft under Profiles → Data &amp; privacy.
-          OpenFreeMap supplies the visible basemap, and the official U.S. Census Geocoder may be used
-          for compatible U.S. street addresses. Public App Store builds do not use the community
-          Nominatim, Photon, or Valhalla demo servers. A future release may use explicitly configured
-          production search and routing providers, but this policy will be updated before that build
-          is distributed.
+          OpenFreeMap supplies the visible basemap. The official U.S. Census Geocoder may be used
+          for compatible U.S. street addresses, and the U.S. Geological Survey GNIS service may be
+          used for named U.S. places. Public App Store builds do not use the community Nominatim,
+          Photon, or Valhalla demo servers. A future release may use explicitly configured production
+          services, but this policy will be updated before that build is distributed.
         </p>
 
         <div class="provider-table" role="table" aria-label="Mapping provider purposes">
@@ -110,6 +110,9 @@
           </div>
           <div role="row">
             <a role="cell" href="https://geocoding.geo.census.gov/geocoder/">U.S. Census</a><span role="cell">Street-address matching</span><span role="cell">When you submit a compatible U.S. address</span>
+          </div>
+          <div role="row">
+            <a role="cell" href="https://www.usgs.gov/us-board-on-geographic-names/download-gnis-data">U.S. Geological Survey GNIS</a><span role="cell">Named places, trails, landmarks, and natural features</span><span role="cell">While you type or submit a U.S. place search</span>
           </div>
           <div role="row">
             <span role="cell">Approved production services</span><span role="cell">Suggestions, places, routes, and jurisdictions</span><span role="cell">Only when enabled in the distributed build and requested by you</span>
