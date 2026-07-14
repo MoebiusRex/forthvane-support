@@ -2,6 +2,8 @@
 
 This public repository hosts the official privacy policy and support information for the Forthvane iPhone app.
 
+Forthvane is developed and operated by Paul Lancaster, California, United States.
+
 - [Privacy policy](https://moebiusrex.github.io/forthvane-support/privacy/)
 - [Help and support](https://moebiusrex.github.io/forthvane-support/support/)
 - [Public, non-sensitive support requests](https://github.com/MoebiusRex/forthvane-support/issues/new?template=support-request.yml)

@@ -51,6 +51,12 @@
         </div>
       </section>
 
+      <section class="prose-section">
+        <p class="kicker">Operator</p>
+        <h2>Who is responsible for Forthvane</h2>
+        <p>Forthvane is developed and operated by Paul Lancaster, California, United States.</p>
+      </section>
+
       <div class="card-grid">
         <article class="card">
           <span class="card-icon" aria-hidden="true">▣</span>
@@ -73,7 +79,9 @@
             A place search may contain the address or place text you enter. Route and jurisdiction
             requests contain the start, destination, or current coordinates needed to calculate the
             result. Normal network information, including an IP address, may reach the provider.
-            The app uses a no-cookie network session without a disk response cache for these requests.
+            Direct Census and GNIS requests use a no-cookie network session without a disk response
+            cache. Apple Maps is provided through Apple's system frameworks and is governed by Apple's
+            own privacy and service terms.
           </p>
         </article>
         <article class="card">
@@ -113,7 +121,7 @@
             <span role="columnheader">Service</span><span role="columnheader">Purpose</span><span role="columnheader">When contacted</span>
           </div>
           <div role="row">
-            <a role="cell" href="https://www.apple.com/legal/privacy/data/en/apple-maps/">Apple Maps</a><span role="cell">Release cycling directions and basemap</span><span role="cell">When you request or display a live Release route</span>
+            <a role="cell" href="https://www.apple.com/legal/privacy/data/en/apple-maps/">Apple Maps</a><span role="cell">Release cycling directions and basemap</span><span role="cell">When a Release map is displayed or you request live cycling directions</span>
           </div>
           <div role="row">
             <a role="cell" href="https://openfreemap.org/privacy/">OpenFreeMap</a><span role="cell">Development or approved managed map style and tiles</span><span role="cell">Not contacted by the current public Release configuration</span>
@@ -133,16 +141,19 @@
       <section class="prose-section stacked-prose">
         <h2>Provider retention and security</h2>
         <p>
-          Forthvane uses encrypted HTTPS connections. A provider may process or retain request and
-          network logs under its own policy for security, abuse prevention, or service operations.
-          Forthvane cannot delete data held independently by a third-party provider.
+          Direct provider requests use encrypted HTTPS connections. Apple Maps communication is
+          performed by Apple's system frameworks. A provider may process or retain request and network
+          logs under its own policy for security, abuse prevention, or service operations. Forthvane
+          does not control provider retention and cannot delete data held independently by a provider.
         </p>
         <h2>Location</h2>
         <p>
           Location access is optional and limited to while you use the app. Foreground guidance compares
-          your position with the selected route on the device. A current coordinate is sent for routing
-          only when you explicitly ask to rebuild from your current location. Forthvane does not
-          currently provide background navigation. Saving a ride is off by default and starts only after
+          your position with the selected route on the device. Apple Maps may receive the map region and
+          ordinary device or network information when its Release map is displayed. Your current coordinate
+          is supplied for directions when you explicitly ask to rebuild from your current location.
+          Continuous guidance positions are not sent to Forthvane and remain on the device. Forthvane does
+          not currently provide background navigation. Saving a ride is off by default and starts only after
           you turn on “Save GPS ride to history” for that ride; the dashboard shows a REC indicator while
           points are stored. Ending the ride saves meaningful progress locally.
         </p>
