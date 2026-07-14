@@ -1,4 +1,4 @@
-name: Rangecraft support request
+name: Forthvane support request
 description: Report an app, route, map, guidance, privacy, or legal-data issue.
 title: "Support: "
 labels: [support]
@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you for helping improve Rangecraft. This issue will be public. Do not include a home address, precise ride history, phone number, password, payment details, health records, or government identification.
+        Thank you for helping improve Forthvane. This issue will be public. Do not include a home address, precise ride history, phone number, password, payment details, health records, or government identification.
   - type: dropdown
     id: area
     attributes:
@@ -25,7 +25,7 @@ body:
   - type: input
     id: app-version
     attributes:
-      label: Rangecraft version
+      label: Forthvane version
       placeholder: Example: 1.0 (1)
   - type: input
     id: device
